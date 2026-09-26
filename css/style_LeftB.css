@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(87, 177, 135);
   
 	background:
 		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
