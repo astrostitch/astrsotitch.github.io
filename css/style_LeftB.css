@@ -5,9 +5,9 @@ body{
 		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
 		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
 		var(--dot-color);
-  --dot-bg: rgb(238, 225, 190);
+  --dot-bg: rgb(233, 229, 218);
   --dot-color: rgba(12, 12, 12, 0.247);
-  --dot-size: 2.25px;
+  --dot-size: 1.5px;
   --dot-space: 20px;
 
   font-family: 'IBM Plex Sans', sans-serif;
@@ -44,6 +44,7 @@ nav{
 #RightB{
   background-color: rgb(237, 252, 245);
   width: 600px;
+  box-shadow: 5px 5px 10px rgba(1, 19, 10, 0.25);
 }
 /*left box*/
 #avatar{
@@ -238,3 +239,4 @@ font-size: 13px;
 #languages #spanish{
   margin-top:10px;
 }
+
