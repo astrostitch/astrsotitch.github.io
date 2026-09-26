@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  
   
 	background:
 		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
@@ -9,6 +9,7 @@ body{
   --dot-color: rgba(12, 12, 12, 0.247);
   --dot-size: 1.5px;
   --dot-space: 20px;
+	background-color: black;
 
   font-family: 'IBM Plex Sans', sans-serif;
 }
