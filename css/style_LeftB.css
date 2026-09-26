@@ -1,0 +1,241 @@
+body{
+  background-color: rgb(87, 177, 135);
+  
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+  --dot-bg: rgb(233, 229, 218);
+  --dot-color: rgba(12, 12, 12, 0.247);
+  --dot-size: 1.5px;
+  --dot-space: 20px;
+
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/*divide boxes*/
+header{
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  gap: 20px;                       
+}
+nav{
+  background-color: #ffff;
+  margin: 10px;
+  padding: 25px;
+  
+  min-width:200px;
+  max-width: 700px;
+  border-radius: 12px;
+}
+#LeftB{
+  position: sticky;
+  margin-top: 3%;
+  
+  align-self:self-start;
+  top:3%;
+  bottom:3%;
+  
+  color:white;
+  background: #000000;
+  background: radial-gradient(farthest-corner at 15% 10%,rgb(38, 72, 55) 0%, rgb(3, 27, 14) 25%, rgb(1, 19, 10) 100%);
+}
+#RightB{
+  background-color: rgb(237, 252, 245);
+  width: 600px;
+}
+/*left box*/
+#avatar{
+  background-color: rgba(57, 143, 102);
+  font-weight: 700;
+  color: rgb(237, 252, 245);
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  min-height: 52px;
+  border: 1px solid rgb(87, 177, 135);
+  border-radius: 12px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#personal{
+  border-bottom: 1px solid rgba(110, 179, 145, 0.247);
+}
+#name{
+  color:rgb(237, 252, 245);
+}
+#name h2{
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+#name span{
+  padding-left: 3px;
+  color: rgba(103, 168, 138, 0.6);
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink{ 
+  50%{ opacity:0; } 
+}
+#profession{
+  color: rgb(103, 168, 138);
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  
+  border-left: 2px solid rgba(57, 143, 102);
+}
+#profession h3{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0px;
+}
+#profession span{
+  font-weight: 100;
+  color: rgba(103, 168, 138, 0.7);
+}
+/*contact*/
+.contact{
+  font-size: 14px;
+}
+.contact h4{
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 100;
+  color: rgba(103, 168, 138, 0.9);
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+#socialmedia{
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 3px;
+  word-break: break-all;
+}
+.icons{
+  color: rgba(103, 168, 138, 0.7);
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center; 
+
+  transition: 0.4s;
+}
+.icons:hover{
+  padding: 10px 10px 10px 10px;
+  font-size: 23px;
+  background-color: rgba(103, 168, 138, 0.15);
+  border-radius: 10px;
+}
+.icons a{
+  text-decoration: none;
+  padding-right:10%;
+  color:rgb(237, 252, 245);
+  font-weight: 400;
+  font-size: 12px;
+  padding-left: 15px;
+  vertical-align: middle;
+
+  transition: 0.2s;
+}
+.icons a:hover{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 13px;
+  font-weight: 500;
+}
+.icons span{
+  text-decoration: none;
+  color:rgb(237, 252, 245);
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  padding-left: 15px;
+
+  transition: 0.4s;
+}
+.icons span:hover{
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+/*divider*/
+#divider{
+  border-bottom: 1px solid rgba(110, 179, 145, 0.247);
+}
+/*skills*/
+#articleskills{
+  font-size: 14px;
+}
+#articleskills h4{
+  font-size: 13px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 100;
+  color: rgba(103, 168, 138, 0.9);
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+#articleskills span{
+  color: rgba(103, 168, 138, 0.6);
+}
+#skills{
+
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 3px;
+}
+#skills li h5{
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 100;
+  color: rgba(103, 168, 138, 0.9);
+}
+#skills li p{
+  margin:0px;
+}
+#skills li span{
+  font-size: 13px;
+  font-weight: 100;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: rgb(237, 252, 245);
+  transition:0.3s;
+}
+#skills li span:hover{
+  background-color: rgba(103, 168, 138, 0.15);
+  border-radius: 6px;
+  font-size: 16px;
+}
+.initial{
+  margin-left: 25px;
+}
+/*languages*/
+#languages{
+  font-size: 14px;
+}
+#languages h4{
+font-size: 13px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 100;
+  color: rgba(103, 168, 138, 0.9);
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+#languages p{
+  margin-bottom:0px;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 100;
+  color: rgb(237, 252, 245);
+}
+#languages #spanish{
+  margin-top:10px;
+}
+
