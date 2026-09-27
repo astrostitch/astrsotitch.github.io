@@ -1,4 +1,5 @@
 body{
+  background-color: rgb(87, 177, 135);
   
 	background:
 		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
@@ -19,6 +20,7 @@ header{
   align-items: center;     
   gap: 20px;                       
 }
+
 nav{
   background-color: #ffff;
   margin: 10px;
@@ -26,6 +28,14 @@ nav{
   
   min-width:200px;
   max-width: 700px;
+  border-radius: 12px;
+}
+footer{
+  margin: 0 auto 0 auto;
+  background-color: rgba(2, 22, 12, 0.4);
+  padding: 25px;
+  min-width:400px;
+  max-width: 600px;
   border-radius: 12px;
 }
 #LeftB{
@@ -42,7 +52,10 @@ nav{
 }
 #RightB{
   background-color: rgb(237, 252, 245);
-  width: 600px;
+  min-width: 600px;
+  box-shadow: 5px 5px 10px rgba(1, 19, 10, 0.25);
+}
+#DownB{
   box-shadow: 5px 5px 10px rgba(1, 19, 10, 0.25);
 }
 /*left box*/
@@ -98,6 +111,29 @@ nav{
 #profession span{
   font-weight: 100;
   color: rgba(103, 168, 138, 0.7);
+}
+section{
+  padding: 10px;
+  border-bottom: 1px solid rgba(110, 179, 145, 0.247);
+}
+#navigationbar h3{
+  display: inline;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0px;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+
+}
+#navigationbar h3 a{
+  padding: 5px;
+  color: rgb(207, 223, 216);
+  text-decoration: none;
+}
+#navigationbar h3 a:hover{
+  background-color: rgba(103, 168, 138, 0.5);
+  border-radius: 8px;
 }
 /*contact*/
 .contact{

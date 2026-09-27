@@ -1,0 +1,30 @@
+footer h2{
+  font-size: 22px;
+  color: rgb(227, 243, 220);
+  margin-top: 0px;
+
+}
+/*formulario*/
+.itemform{
+  display: grid;
+  grid-template-columns: 150px 350px;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+.itemform label{
+  font-weight: 700;
+  color: rgb(226, 238, 221);
+}
+.itemform input,
+.itemform textarea{
+  border-radius: 7px;
+  border: 1px solid rgb(95, 126, 115);
+}
+input[type="submit"]{
+  background-color: rgb(20, 26, 17);
+  color: rgb(185, 226, 212);
+  padding: 10px 20px 10px 20px;
+  grid-column: 2/3;
+  justify-self: end;
+}
